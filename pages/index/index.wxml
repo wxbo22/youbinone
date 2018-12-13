@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='search'>
+    <i class="icon-search"></i>
+    <input type='text' class='inputtext' />
+  </view>
+  <view class='banner'>
+    <image src='/img/banner.png' />
+  </view>
+  <view class='cg'>
+    <view class='cgTitle'>
+      <span>热门讲解</span>
+      <span style="float:right"><navigator  url='/pages/bwg/bwg'>更多</navigator></span>
+    </view>
+    <view>
+      <view class='bwg'>
+        <navigator url='/pages/bwginfo/bwginfo'><image src='/img/sz.png'></image>苏州博物馆1</navigator>
+      </view>
+      <view class='bwg'>
+        <navigator url='/pages/bwginfo/bwginfo'> <image src='/img/sz.png'></image>苏州博物馆2</navigator>
+      </view>
+      <view class='bwg'>
+         <navigator url='/pages/bwginfo/bwginfo'><image src='/img/sz.png'></image>苏州博物馆3</navigator>
+      </view>
+      <view class='bwg'>
+         <navigator url='/pages/bwginfo/bwginfo'><image src='/img/sz.png'></image>苏州博物馆4</navigator>
+      </view>
+      <view class='bwg'>
+         <navigator url='/pages/bwginfo/bwginfo'><image src='/img/sz.png'></image>苏州博物馆5</navigator>
+      </view>
+      <view class='bwg'>
+        <navigator url='/pages/bwginfo/bwginfo'> <image src='/img/sz.png'></image>苏州博物馆6</navigator>
+      </view>
+        <view class='bwg'>
+         <navigator url='/pages/bwginfo/bwginfo'><image src='/img/sz.png'></image>苏州博物馆7</navigator>
+      </view>
+      <view class='bwg'>
+         <navigator url='/pages/bwginfo/bwginfo'><image src='/img/sz.png'></image>苏州博物馆8</navigator>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->

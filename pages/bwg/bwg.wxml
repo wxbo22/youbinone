@@ -1,0 +1,109 @@
+<!--pages/bwg/bwg.wxml-->
+
+<view class='container'>
+  <view class='bwglist'>
+    <navigator url='/pages/bwginfo/bwginfo'>
+    <view class='img'>
+     <image src='/img/sz.png' />
+    </view>
+    <view class='imgRight'>
+      <text class='title'>苏州博物馆1 \n</text>
+      <text class='sub'>现代建筑打死贝聿铭的封山之作，太平天国忠王府不容错过\n</text>
+      <text class='read'>10W+</text>
+    </view>
+    <view class='clear'></view>
+    </navigator>
+  </view>
+  <view class='bwglist'>
+    <navigator url='/pages/bwginfo/bwginfo'>
+    <view class='img'>
+     <image src='/img/sz.png' />
+    </view>
+    <view class='imgRight'>
+      <text class='title'>苏州博物馆2 \n</text>
+      <text class='sub'>现代建筑打死贝聿铭的封山之作，太平天国忠王府不容错过\n</text>
+      <text class='read'>10W+</text>
+    </view>
+    <view class='clear'></view>
+    </navigator>
+  </view>
+  <view class='bwglist'>
+    <navigator url='/pages/bwginfo/bwginfo'>
+    <view class='img'>
+     <image src='/img/sz.png' />
+    </view>
+    <view class='imgRight'>
+      <text class='title'>苏州博物馆3 \n</text>
+      <text class='sub'>现代建筑打死贝聿铭的封山之作，太平天国忠王府不容错过\n</text>
+      <text class='read'>10W+</text>
+    </view>
+    <view class='clear'></view>
+    </navigator>
+  </view>
+  <view class='bwglist'>
+    <navigator url='/pages/bwginfo/bwginfo'>
+    <view class='img'>
+     <image src='/img/sz.png' />
+    </view>
+    <view class='imgRight'>
+      <text class='title'>苏州博物馆4 \n</text>
+      <text class='sub'>现代建筑打死贝聿铭的封山之作，太平天国忠王府不容错过\n</text>
+      <text class='read'>10W+</text>
+    </view>
+    <view class='clear'></view>
+    </navigator>
+  </view>
+  <view class='bwglist'>
+    <navigator url='/pages/bwginfo/bwginfo'>
+    <view class='img'>
+     <image src='/img/sz.png' />
+    </view>
+    <view class='imgRight'>
+      <text class='title'>苏州博物馆5 \n</text>
+      <text class='sub'>现代建筑打死贝聿铭的封山之作，太平天国忠王府不容错过\n</text>
+      <text class='read'>10W+</text>
+    </view>
+    <view class='clear'></view>
+    </navigator>
+  </view>
+  <view class='bwglist'>
+    <navigator url='/pages/bwginfo/bwginfo'>
+    <view class='img'>
+     <image src='/img/sz.png' />
+    </view>
+    <view class='imgRight'>
+      <text class='title'>苏州博物馆6 \n</text>
+      <text class='sub'>现代建筑打死贝聿铭的封山之作，太平天国忠王府不容错过\n</text>
+      <text class='read'>10W+</text>
+    </view>
+    <view class='clear'></view>
+    </navigator>
+  </view>
+  <view class='bwglist'>
+    <navigator url='/pages/bwginfo/bwginfo'>
+    <view class='img'>
+     <image src='/img/sz.png' />
+    </view>
+    <view class='imgRight'>
+      <text class='title'>苏州博物馆7 \n</text>
+      <text class='sub'>现代建筑打死贝聿铭的封山之作，太平天国忠王府不容错过\n</text>
+      <text class='read'>10W+</text>
+    </view>
+    <view class='clear'></view>
+    </navigator>
+  </view>
+  <view class='bwglist'>
+    <navigator url='/pages/bwginfo/bwginfo'>
+    <view class='img'>
+     <image src='/img/sz.png' />
+    </view>
+    <view class='imgRight'>
+      <text class='title'>苏州博物馆8 \n</text>
+      <text class='sub'>现代建筑打死贝聿铭的封山之作，太平天国忠王府不容错过\n</text>
+      <text class='read'>10W+</text>
+    </view>
+    <view class='clear'></view>
+    </navigator>
+  </view>
+   
+</view>

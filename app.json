@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/bwg/bwg",
+    "pages/bwginfo/bwginfo",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "博物馆",
+    "navigationBarTextStyle":"black"
+  }
+}
