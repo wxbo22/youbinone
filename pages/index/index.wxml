@@ -65,6 +65,111 @@
 
         </view>
     </view>
+    <!-- 最新上线 -->
+    <view class='index-part-two'>
+        <view class='index-part-title-two'>
+            <text class='a-title'>最新上线</text>
+            <text class='a-more'>更多</text>
+        </view>
+        <scroll-view class="index-part-two-scroll" scroll-x="true">
+            <view class='index-part-content-two'>
+                <!-- 项目一 -->
+                <view class='c-img-item'>
+                    <view class='c-img-01'>
+                        <image src='/img/sz.png' />
+                    </view>
+                    <view class='b-img-02'>苏州博物馆1</view>
+                    <view class='b-img-03'>
+                        <i class="iconfont icon-erji" />
+                        <text>10万+</text>
+                    </view>
+                </view>
+                <!-- 项目一 -->
+                <view class='c-img-item'>
+                    <view class='c-img-01'>
+                        <image src='/img/sz.png' />
+                    </view>
+                    <view class='b-img-02'>苏州博物馆1</view>
+                    <view class='b-img-03'>
+                        <i class="iconfont icon-erji" />
+                        <text>10万+</text>
+                    </view>
+                </view>
+                <!-- 项目一 -->
+                <view class='c-img-item'>
+                    <view class='c-img-01'>
+                        <image src='/img/sz.png' />
+                    </view>
+                    <view class='b-img-02'>苏州博物馆1</view>
+                    <view class='b-img-03'>
+                        <i class="iconfont icon-erji" />
+                        <text>10万+</text>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+        <view class='index-part-content-two'></view>
+    </view>
+
+    <!-- 附近讲解 -->
+    <view class='index-part-one'>
+        <view class='index-part-title-one'>
+            <text class='a-title'>附近讲解</text>
+            <text class='a-more'>更多</text>
+        </view>
+        <view class='index-part-content-one'>
+            <!-- 项目一 -->
+            <view class='b-img-item'>
+                <view class='b-img-01'>
+                    <image src='/img/sz.png' />
+                </view>
+                <view class='b-img-02'>苏州博物馆1</view>
+                <view class='b-img-03'>
+                    <i class="iconfont icon-erji" />
+                    <text>10万+</text>
+                    <text class='b-img-way'>202.8公里</text>
+                </view>
+            </view>
+            <!-- 项目一 -->
+            <view class='b-img-item'>
+                <view class='b-img-01'>
+                    <image src='/img/sz.png' />
+                </view>
+                <view class='b-img-02'>苏州博物馆1</view>
+                <view class='b-img-03'>
+                    <i class="iconfont icon-erji" />
+                    <text>10万+</text>
+                    <text class='b-img-way'>202.8公里</text>
+                </view>
+            </view>
+            <!-- 项目一 -->
+            <view class='b-img-item'>
+                <view class='b-img-01'>
+                    <image src='/img/sz.png' />
+                </view>
+                <view class='b-img-02'>苏州博物馆1</view>
+                <view class='b-img-03'>
+                    <i class="iconfont icon-erji" />
+                    <text>10万+</text>
+                    <text class='b-img-way'>202.8公里</text>
+                </view>
+            </view>
+            <!-- 项目一 -->
+            <view class='b-img-item'>
+                <view class='b-img-01'>
+                    <image src='/img/sz.png' />
+                </view>
+                <view class='b-img-02'>苏州博物馆1</view>
+                <view class='b-img-03'>
+                    <i class="iconfont icon-erji" />
+                    <text>10万+</text>
+                    <text class='b-img-way'>202.8公里</text>
+                </view>
+            </view>
+
+        </view>
+    </view>
+
 </view>
 
 <!-- 

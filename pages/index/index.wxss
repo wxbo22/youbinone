@@ -53,11 +53,11 @@
     padding: 20rpx 20rpx 20rpx 0;
     justify-content: space-between;
     align-items: center;
+    font-weight: bold;    
 }
 
 .a-title{
-    font-size: 40rpx;
-    font-weight: bold;
+    font-size: 36rpx;
 }
 
 .a-more{
@@ -91,4 +91,41 @@
 
 .b-img-03 .iconfont{
     margin: 0 5rpx 0 0;
+}
+
+.b-img-way{
+    padding: 0 0 0 20rpx;
+    color: #ccc;
+}
+
+/* 最新上线 */
+.index-part-two{
+  margin: 30rpx 0 0;
+}
+
+.index-part-title-two{
+    display: flex;
+    padding: 20rpx;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;    
+}
+
+.index-part-content-two{
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
+}
+
+.c-img-item{
+    margin: 0 0 20rpx 20rpx;
+}
+
+.c-img-01 image{
+    width: 400rpx;
+    height: 224rpx;
+}
+
+.index-part-two-scroll{
+    width: calc(100% - 20rpx);
 }
