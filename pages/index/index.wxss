@@ -130,3 +130,30 @@
 .index-part-two-scroll{
     width: calc(100% - 20rpx);
 }
+
+/* 精彩讲解 */
+.c-people-item{
+    display: flex;
+    margin: 0 0 20rpx 0;
+}
+
+.c-people-left-item{
+  width: 200rpx;
+  margin:0 20rpx 0 0; 
+}
+
+.c-people-left-item image{
+    width: 200rpx;
+    height: 270rpx;
+    border-radius: 10rpx;
+}
+
+.c-people-company{
+    color: #999;
+    margin: 0 0 20rpx 0;
+}
+
+.c-people-title{
+    font-size: 32rpx;
+    font-weight: bold;
+}
