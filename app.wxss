@@ -1,7 +1,7 @@
 /**app.wxss**/
 page,.container{
     height: 100%;
-    font-size: 24rpx;
+    font-size: 28rpx;
 }
 
 image{

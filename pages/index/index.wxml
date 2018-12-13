@@ -1,54 +1,68 @@
 <!--index.wxml-->
 <view class="container">
+    <!-- 搜索部分 -->
     <view class='index-search-out'>
         <view class='index-search-in'>
             <i class="iconfont icon-fangdajing" />
             <input type='text' class='inputtext' placeholder='搜索 博物馆 / 展览 / 景点' />
         </view>
     </view>
+    <!-- BANNER -->
     <view class='index-banner'>
         <image src='/img/banner.png' mode='aspectFit' />
     </view>
-    <view class='cg'>
-        <view class='cgTitle'>
-            <span>热门讲解</span>
-            <span style="float:right">
-                <navigator url='/pages/bwg/bwg'>更多</navigator>
-            </span>
+    <!-- 热门讲解 -->
+    <view class='index-part-one'>
+        <view class='index-part-title-one'>
+            <text class='a-title'>热门讲解</text>
+            <text class='a-more'>更多</text>
         </view>
-        <view>
-            <view class='bwg'>
-                <navigator url='/pages/bwginfo/bwginfo'>
-                    <image src='/img/sz.png'></image>苏州博物馆1</navigator>
+        <view class='index-part-content-one'>
+            <!-- 项目一 -->
+            <view class='b-img-item'>
+                <view class='b-img-01'>
+                    <image src='/img/sz.png' />
+                </view>
+                <view class='b-img-02'>苏州博物馆1</view>
+                <view class='b-img-03'>
+                    <i class="iconfont icon-erji" />
+                    <text>10万+</text>
+                </view>
             </view>
-            <view class='bwg'>
-                <navigator url='/pages/bwginfo/bwginfo'>
-                    <image src='/img/sz.png'></image>苏州博物馆2</navigator>
+            <!-- 项目一 -->
+            <view class='b-img-item'>
+                <view class='b-img-01'>
+                    <image src='/img/sz.png' />
+                </view>
+                <view class='b-img-02'>苏州博物馆1</view>
+                <view class='b-img-03'>
+                    <i class="iconfont icon-erji" />
+                    <text>10万+</text>
+                </view>
             </view>
-            <view class='bwg'>
-                <navigator url='/pages/bwginfo/bwginfo'>
-                    <image src='/img/sz.png'></image>苏州博物馆3</navigator>
+            <!-- 项目一 -->
+            <view class='b-img-item'>
+                <view class='b-img-01'>
+                    <image src='/img/sz.png' />
+                </view>
+                <view class='b-img-02'>苏州博物馆1</view>
+                <view class='b-img-03'>
+                    <i class="iconfont icon-erji" />
+                    <text>10万+</text>
+                </view>
             </view>
-            <view class='bwg'>
-                <navigator url='/pages/bwginfo/bwginfo'>
-                    <image src='/img/sz.png'></image>苏州博物馆4</navigator>
+            <!-- 项目一 -->
+            <view class='b-img-item'>
+                <view class='b-img-01'>
+                    <image src='/img/sz.png' />
+                </view>
+                <view class='b-img-02'>苏州博物馆1</view>
+                <view class='b-img-03'>
+                    <i class="iconfont icon-erji" />
+                    <text>10万+</text>
+                </view>
             </view>
-            <view class='bwg'>
-                <navigator url='/pages/bwginfo/bwginfo'>
-                    <image src='/img/sz.png'></image>苏州博物馆5</navigator>
-            </view>
-            <view class='bwg'>
-                <navigator url='/pages/bwginfo/bwginfo'>
-                    <image src='/img/sz.png'></image>苏州博物馆6</navigator>
-            </view>
-            <view class='bwg'>
-                <navigator url='/pages/bwginfo/bwginfo'>
-                    <image src='/img/sz.png'></image>苏州博物馆7</navigator>
-            </view>
-            <view class='bwg'>
-                <navigator url='/pages/bwginfo/bwginfo'>
-                    <image src='/img/sz.png'></image>苏州博物馆8</navigator>
-            </view>
+
         </view>
     </view>
 </view>
