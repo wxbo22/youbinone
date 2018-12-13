@@ -35,6 +35,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    appName: '券美' // 小程序名称
+    appName: '博物馆' // 小程序名称
   }
 })
