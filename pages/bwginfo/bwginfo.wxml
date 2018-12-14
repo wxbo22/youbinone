@@ -19,4 +19,13 @@
                 <text>大门10元/人，西洋楼遗址15元/人</text>
           </view>
     </view>
+    <!-- 语音讲解 -->
+    <view class='bwg-common-title' >
+          <view class='bwg-common-icon-t' ></view>
+          <view class='bwg-common-h3' >语音讲解</view>
+    </view>
+    <view class='bwg-part-one-title-out' >
+          <view class='part-one-left' ></view>
+          <view class='part-one-right' ></view>
+    </view>
 </view>

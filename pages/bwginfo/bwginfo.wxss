@@ -30,6 +30,7 @@
 .bwgdetail-prop{
     background-color: #eee;
     padding: 20rpx;
+    margin: 0 0 20rpx 0;
 }
 
 .detail-prop-an{
@@ -40,4 +41,23 @@
 .detail-prop-an .iconfont{
     color: #666;
     margin: 0 10rpx 0 0;
+}
+
+/* 语音讲解 */
+.bwg-common-icon-t{
+    width: 10rpx;
+    height: 36rpx;
+    background: linear-gradient(to bottom, #00e7f3 , #01c0d2);
+    margin: 0 10rpx 0 0;
+}
+
+.bwg-common-title{
+    display: flex;
+    margin: 30rpx 20rpx;
+    align-items: center;    
+}
+
+.bwg-common-h3{
+    font-size: 36rpx;
+    font-weight: bold;
 }
