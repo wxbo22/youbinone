@@ -1,14 +1,16 @@
 /* BANNER */
-.bwgdetail-banner{
+
+.bwgdetail-banner {
     position: relative;
     height: 400rpx;
 }
-.bwgdetail-banner image{
+
+.bwgdetail-banner image {
     width: 100%;
     height: 400rpx;
 }
 
-.bwg-title{
+.bwg-title {
     height: 80rpx;
     font-size: 36rpx;
     display: flex;
@@ -22,104 +24,110 @@
     left: 0;
 }
 
-.bwg-title text{
+.bwg-title text {
     padding: 0 0 0 30rpx;
 }
 
 /* 大图详细 */
-.bwgdetail-prop{
+
+.bwgdetail-prop {
     background-color: #eee;
     padding: 20rpx;
     margin: 0 0 20rpx 0;
 }
 
-.detail-prop-an{
+.detail-prop-an {
     color: #333;
     line-height: 50rpx;
 }
 
-.detail-prop-an .iconfont{
+.detail-prop-an .iconfont {
     color: #666;
     margin: 0 10rpx 0 0;
 }
 
 /* 语音讲解 */
-.bwg-common-icon-t{
+
+.bwg-common-icon-t {
     width: 10rpx;
     height: 36rpx;
-    background: linear-gradient(to bottom, #00e7f3 , #01c0d2);
+    background: linear-gradient(to bottom, #00e7f3, #01c0d2);
     margin: 0 10rpx 0 0;
 }
 
-.bwg-common-title{
+.bwg-common-title {
     display: flex;
     margin: 30rpx 20rpx;
-    align-items: center;    
+    align-items: center;
 }
 
-.bwg-common-h3{
+.bwg-common-h3 {
     font-size: 36rpx;
     font-weight: bold;
 }
 
-.bwg-part-one-title-out{
+.bwg-part-one-title-out {
     display: flex;
     justify-content: space-between;
     padding: 10rpx 20rpx 20rpx;
     align-items: center;
 }
 
-.part-one-left{
+.part-one-left {
     display: flex;
     align-items: center;
 }
 
-.part-one-a-i{
+.part-one-a-i {
     height: 32rpx;
     width: 0;
-    border-left:1rpx dotted #ccc;
+    border-left: 1rpx dotted #ccc;
     margin: 0 10rpx;
 }
 
-.part-one-a-lou,.part-one-a-name{
+.part-one-a-lou, .part-one-a-name {
     font-size: 32rpx;
     font-weight: bold;
 }
 
-.part-one-a-type{
+.part-one-a-type {
     margin: 0 0 0 5rpx;
     font-size: 22rpx;
     color: #999;
 }
 
-.part-one-right{
+.part-one-right {
     color: #01c0d2;
 }
 
-.bwg-part-one-content-out{
+.bwg-part-one-content-out {
     padding: 0 20rpx 30rpx 20rpx;
 }
 
-.bwg-profile-in{
+.bwg-profile-in {
     position: relative;
     overflow: hidden;
 }
 
-.bwg-profile-wenzi{
+.bwg-profile-wenzi {
     padding: 20rpx;
     line-height: 46rpx;
 }
 
-
-.bwg-see-more{
+.bwg-see-layer {
     position: absolute;
     bottom: 0;
     height: 80rpx;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     left: 0;
     color: #01c0d2;
-    background: repeating-linear-gradient(rgba(255,255,255,0) 0%, #fff 40%, #fff 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff);
+}
+
+.bwg-see-about-tab {
+    height: 80rpx;
+    color: #01c0d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
