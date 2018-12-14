@@ -19,7 +19,7 @@
         </view>
         <view class='index-part-content-one'>
             <!-- 项目一 -->
-            <view class='b-img-item'>
+            <view class='b-img-item' bindtap='bwgDetailEvent' >
                 <view class='b-img-01'>
                     <image src='/img/sz.png' />
                 </view>

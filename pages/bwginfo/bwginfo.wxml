@@ -1,2 +1,22 @@
-<!--pages/bwginfo/bwginfo.wxml-->
-<text>pages/bwginfo/bwginfo.wxml</text>
+<view class='container'>
+    <!-- BANNER -->
+    <view class='bwgdetail-banner'>
+        <view class='bwg-title' ><text>圆明园遗址公园</text></view>
+        <image src='/img/sz.png' />
+    </view>
+    <!-- 大图详细 -->
+    <view class='bwgdetail-prop' >
+          <view class='detail-prop-an' >
+                <i class='iconfont icon-dizhi' />
+                <text>北京 海淀 海淀区 清华西路28号</text>
+          </view>
+          <view class='detail-prop-an' >
+                <i class='iconfont icon-shijian' />
+                <text>7:00~19:30 （常年开放）</text>
+          </view>
+          <view class='detail-prop-an' >
+                <i class='iconfont icon-biaoqian' />
+                <text>大门10元/人，西洋楼遗址15元/人</text>
+          </view>
+    </view>
+</view>
