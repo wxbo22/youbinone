@@ -99,3 +99,9 @@
 .bwg-part-one-content-out{
     padding: 0 20rpx 30rpx 20rpx;
 }
+
+.bwg-profile-in{
+    padding: 20rpx;
+    line-height: 46rpx;
+    position: relative;
+}
