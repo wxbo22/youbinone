@@ -105,3 +105,16 @@
     line-height: 46rpx;
     position: relative;
 }
+
+.bwg-see-more{
+    position: absolute;
+    bottom: 0;
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    color: #01c0d2;
+    background: repeating-linear-gradient(rgba(255,255,255,0) 0%, #fff 70%);
+}
