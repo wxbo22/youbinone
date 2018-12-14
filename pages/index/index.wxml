@@ -180,6 +180,7 @@
             <view class='c-people-item'>
                 <view class='c-people-left-item'>
                     <image src='/img/people.png' />
+                    <view class='c-people-music' ><i class='iconfont icon-yinbo' /></view>
                 </view>
                 <view class='c-people-right-item'>
                     <view class='c-people-company'>成都武侯祠景区</view>
@@ -212,6 +213,7 @@
             <view class='c-people-item'>
                 <view class='c-people-left-item'>
                     <image src='/img/people.png' />
+                    <view class='c-people-music' ><i class='iconfont icon-yinbo' /></view>
                 </view>
                 <view class='c-people-right-item'>
                     <view class='c-people-company'>成都武侯祠景区</view>
@@ -239,6 +241,7 @@
             <view class='c-people-item'>
                 <view class='c-people-left-item'>
                     <image src='/img/people.png' />
+                    <view class='c-people-music' ><i class='iconfont icon-yinbo' /></view>
                 </view>
                 <view class='c-people-right-item'>
                     <view class='c-people-company'>成都武侯祠景区</view>
