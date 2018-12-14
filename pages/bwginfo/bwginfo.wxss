@@ -95,3 +95,7 @@
 .part-one-right{
     color: #01c0d2;
 }
+
+.bwg-part-one-content-out{
+    padding: 0 20rpx 30rpx 20rpx;
+}

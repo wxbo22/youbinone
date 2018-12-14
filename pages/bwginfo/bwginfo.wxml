@@ -1,37 +1,78 @@
 <view class='container'>
     <!-- BANNER -->
     <view class='bwgdetail-banner'>
-        <view class='bwg-title' ><text>圆明园遗址公园</text></view>
+        <view class='bwg-title'>
+            <text>圆明园遗址公园</text>
+        </view>
         <image src='/img/sz.png' />
     </view>
     <!-- 大图详细 -->
-    <view class='bwgdetail-prop' >
-          <view class='detail-prop-an' >
-                <i class='iconfont icon-dizhi' />
-                <text>北京 海淀 海淀区 清华西路28号</text>
-          </view>
-          <view class='detail-prop-an' >
-                <i class='iconfont icon-shijian' />
-                <text>7:00~19:30 （常年开放）</text>
-          </view>
-          <view class='detail-prop-an' >
-                <i class='iconfont icon-biaoqian' />
-                <text>大门10元/人，西洋楼遗址15元/人</text>
-          </view>
+    <view class='bwgdetail-prop'>
+        <view class='detail-prop-an'>
+            <i class='iconfont icon-dizhi' />
+            <text>北京 海淀 海淀区 清华西路28号</text>
+        </view>
+        <view class='detail-prop-an'>
+            <i class='iconfont icon-shijian' />
+            <text>7:00~19:30 （常年开放）</text>
+        </view>
+        <view class='detail-prop-an'>
+            <i class='iconfont icon-biaoqian' />
+            <text>大门10元/人，西洋楼遗址15元/人</text>
+        </view>
     </view>
     <!-- 语音讲解 -->
-    <view class='bwg-common-title' >
-          <view class='bwg-common-icon-t' ></view>
-          <view class='bwg-common-h3' >语音讲解</view>
+    <view class='bwg-common-title'>
+        <view class='bwg-common-icon-t'></view>
+        <view class='bwg-common-h3'>语音讲解</view>
     </view>
     <!-- 标题 -->
-    <view class='bwg-part-one-title-out' >
-          <view class='part-one-left' >
-               <text class='part-one-a-lou' >1F</text>
-               <view class='part-one-a-i' ></view>
-               <text class='part-one-a-name' >苏州博物馆常设展</text>
-               <text class='part-one-a-type' >常设展</text>
-          </view>
-          <view class='part-one-right' >展览介绍</view>
+    <view class='bwg-part-one-title-out'>
+        <view class='part-one-left'>
+            <text class='part-one-a-lou'>1F</text>
+            <view class='part-one-a-i'></view>
+            <text class='part-one-a-name'>苏州博物馆常设展</text>
+            <text class='part-one-a-type'>常设展</text>
+        </view>
+        <view class='part-one-right'>展览介绍</view>
+    </view>
+    <view class='bwg-part-one-content-out'>
+        <!-- 项目一 -->
+        <view class='c-people-item'>
+            <view class='c-people-left-item'>
+                <image src='/img/people.png' />
+                <view class='c-people-music'>
+                    <i class='iconfont icon-yinbo' />
+                </view>
+            </view>
+            <view class='c-people-right-item'>
+                <view class='c-people-company'>成都武侯祠景区</view>
+                <view class='c-people-title'>武侯祠里的故事</view>
+                <view class='c-people-descript'>赵弘文 / 文化遗产资深解说人</view>
+                <view class='c-people-bottom'>
+                    <view class='c-people-left-bottom'>
+                        <view class='cpeople-bone'>
+                            <text>段子手</text>
+                            <text>内容详实</text>
+                            <text>讲解专业</text>
+                        </view>
+                        <view class='cpeople-btwo'>
+                            <view class='people-price'>
+                                ¥
+                                <text>10</text>
+                            </view>
+                            <text class='people-fuhao'>|</text>
+                            <text class='people-mfst'>免费试听</text>
+                            <view class='people-star'>
+                                <i class="iconfont icon-xing" />
+                                <text>5.0</text>
+                            </view>
+                        </view>
+
+                    </view>
+                    <view class='c-people-right-bottom'>进入收听</view>
+                </view>
+            </view>
+        </view>
     </view>
 </view>
