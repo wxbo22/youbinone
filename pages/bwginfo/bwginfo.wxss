@@ -101,10 +101,15 @@
 }
 
 .bwg-profile-in{
+    position: relative;
+    overflow: hidden;
+}
+
+.bwg-profile-wenzi{
     padding: 20rpx;
     line-height: 46rpx;
-    position: relative;
 }
+
 
 .bwg-see-more{
     position: absolute;
@@ -116,5 +121,5 @@
     width: 100%;
     left: 0;
     color: #01c0d2;
-    background: repeating-linear-gradient(rgba(255,255,255,0) 0%, #fff 70%);
+    background: repeating-linear-gradient(rgba(255,255,255,0) 0%, #fff 40%, #fff 100%);
 }
