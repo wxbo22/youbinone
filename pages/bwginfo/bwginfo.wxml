@@ -24,8 +24,14 @@
           <view class='bwg-common-icon-t' ></view>
           <view class='bwg-common-h3' >语音讲解</view>
     </view>
+    <!-- 标题 -->
     <view class='bwg-part-one-title-out' >
-          <view class='part-one-left' ></view>
-          <view class='part-one-right' ></view>
+          <view class='part-one-left' >
+               <text class='part-one-a-lou' >1F</text>
+               <view class='part-one-a-i' ></view>
+               <text class='part-one-a-name' >苏州博物馆常设展</text>
+               <text class='part-one-a-type' >常设展</text>
+          </view>
+          <view class='part-one-right' >展览介绍</view>
     </view>
 </view>
