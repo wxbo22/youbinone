@@ -194,7 +194,66 @@
                             </view>
                             <view class='cpeople-btwo'>
                                 <view class='people-price'>
-                                    <text>¥</text>10</view>
+                                    ¥<text>10</text></view>
+                                <text class='people-fuhao'>|</text>
+                                <text class='people-mfst'>免费试听</text>
+                                <view class='people-star'>
+                                    <i class="iconfont icon-xing" />
+                                    <text>5.0</text>
+                                </view>
+                            </view>
+
+                        </view>
+                        <view class='c-people-right-bottom'>进入收听</view>
+                    </view>
+                </view>
+            </view>
+            <!-- 项目一 -->
+            <view class='c-people-item'>
+                <view class='c-people-left-item'>
+                    <image src='/img/people.png' />
+                </view>
+                <view class='c-people-right-item'>
+                    <view class='c-people-company'>成都武侯祠景区</view>
+                    <view class='c-people-title'>武侯祠里的故事</view>
+                    <view class='c-people-descript'>赵弘文 / 文化遗产资深解说人</view>
+                    <view class='c-people-bottom'>
+                        <view class='c-people-left-bottom'>
+                            <view class='cpeople-bone'>
+                                <text>段子手</text>
+                                <text>内容详实</text>
+                                <text>讲解专业</text>
+                            </view>
+                            <view class='cpeople-btwo'>
+                                <text class='people-mianfei' >免费</text>
+                                <text class='people-fuhao'>|</text>
+                                <text class='people-mfst'>限试运营期间</text>
+                            </view>
+
+                        </view>
+                        <view class='c-people-right-bottom'>进入收听</view>
+                    </view>
+                </view>
+            </view>
+            <!-- 项目一 -->
+            <view class='c-people-item'>
+                <view class='c-people-left-item'>
+                    <image src='/img/people.png' />
+                </view>
+                <view class='c-people-right-item'>
+                    <view class='c-people-company'>成都武侯祠景区</view>
+                    <view class='c-people-title'>武侯祠里的故事</view>
+                    <view class='c-people-descript'>赵弘文 / 文化遗产资深解说人</view>
+                    <view class='c-people-bottom'>
+                        <view class='c-people-left-bottom'>
+                            <view class='cpeople-bone'>
+                                <text>段子手</text>
+                                <text>内容详实</text>
+                                <text>讲解专业</text>
+                            </view>
+                            <view class='cpeople-btwo'>
+                                <view class='people-price'>
+                                    ¥<text>10</text></view>
                                 <text class='people-fuhao'>|</text>
                                 <text class='people-mfst'>免费试听</text>
                                 <view class='people-star'>
