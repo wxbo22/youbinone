@@ -112,4 +112,18 @@
             </view>
         </view>
     </view>
+    <!-- 景点介绍 -->
+     <view class='bwg-common-title'>
+        <view class='bwg-common-icon-t'></view>
+        <view class='bwg-common-h3'>景点介绍</view>
+    </view>
+    <!-- 景点介绍标题 -->
+    <view class='bwg-part-one-title-out'>
+        <view class='part-one-left'>
+            <text class='part-one-a-name'>景区介绍</text>
+        </view>
+    </view>
+    <view class='bwg-part-two-content-out'></view>
+
+
 </view>
