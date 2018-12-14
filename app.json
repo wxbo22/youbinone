@@ -1,14 +1,32 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/bwg/bwg",
-    "pages/bwginfo/bwginfo",
-    "pages/logs/logs"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "博物馆",
-    "navigationBarTextStyle":"black"
-  }
+    "pages": [
+        "pages/index/index",
+        "pages/bwg/bwg",
+        "pages/bwginfo/bwginfo",
+        "pages/logs/logs"
+    ],
+    "tabBar": {
+        "color":"#b5b5b5",
+        "selectedColor":"#01c0d2",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath":"/img/nav_icon_a1.png",
+                "selectedIconPath":"/img/nav_icon_a.png"
+            },
+            {
+                "pagePath": "pages/logs/logs",
+                "text": "日志",
+                "iconPath": "/img/nav_icon_b1.png",
+                "selectedIconPath": "/img/nav_icon_b.png"
+            }
+        ]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "博物馆",
+        "navigationBarTextStyle": "black"
+    }
 }
