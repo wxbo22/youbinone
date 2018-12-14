@@ -135,8 +135,8 @@
             <view class='bwg-see-layer'></view>
         </view>
         <view class='bwg-see-about-tab' bindtap='aboutmoreEvent'>
-            <text hidden='{{aboutHeight == "auto"}}' >查看全部介绍</text>
-            <text hidden='{{aboutHeight != "auto"}}' >隐藏全部介绍</text>
+            <view hidden='{{aboutHeight == "auto"}}' >查看全部介绍 <i class='iconfont icon-jiantou_liebiaozhankai' /></view>
+            <view hidden='{{aboutHeight != "auto"}}' >隐藏全部介绍 <i class='iconfont icon-jiantou_liebiaoshouqi' /> </view>
         </view>
     </view>
 
