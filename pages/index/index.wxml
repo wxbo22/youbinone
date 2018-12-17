@@ -177,7 +177,7 @@
         </view>
         <view class='index-part-three-content'>
             <!-- 项目一 -->
-            <view class='c-people-item'>
+            <view class='c-people-item' bindtap='personDetailEvent' >
                 <view class='c-people-left-item'>
                     <image src='/img/people.png' />
                     <view class='c-people-music' ><i class='iconfont icon-yinbo' /></view>

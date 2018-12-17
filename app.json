@@ -3,17 +3,18 @@
         "pages/index/index",
         "pages/bwg/bwg",
         "pages/bwginfo/bwginfo",
-        "pages/logs/logs"
+        "pages/logs/logs",
+        "pages/personalDetail/personalDetail"
     ],
     "tabBar": {
-        "color":"#b5b5b5",
-        "selectedColor":"#01c0d2",
+        "color": "#b5b5b5",
+        "selectedColor": "#01c0d2",
         "list": [
             {
                 "pagePath": "pages/index/index",
                 "text": "首页",
-                "iconPath":"/img/nav_icon_a1.png",
-                "selectedIconPath":"/img/nav_icon_a.png"
+                "iconPath": "/img/nav_icon_a1.png",
+                "selectedIconPath": "/img/nav_icon_a.png"
             },
             {
                 "pagePath": "pages/logs/logs",
