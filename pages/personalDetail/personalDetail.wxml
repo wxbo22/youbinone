@@ -1,2 +1,17 @@
-<!--pages/personalDetail/personalDetail.wxml-->
-<text>pages/personalDetail/personalDetail.wxml</text>
+<view class='container'>
+    <!-- 顶部导航 -->
+    <view class='person-detail-nav'>
+        <view class='per-nav-one nav-active'>
+            <i class='iconfont icon-other' />
+            <text>列表</text>
+        </view>
+        <view class='per-nav-one'>
+            <i class='iconfont icon-document' />
+            <text>大图</text>
+        </view>
+        <view class='per-nav-one'>
+            <i class='iconfont icon-live' />
+            <text>全屏</text>
+        </view>
+    </view>
+</view>
