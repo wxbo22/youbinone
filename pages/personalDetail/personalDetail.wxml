@@ -15,5 +15,20 @@
         </view>
     </view>
     <!-- 音乐列表 -->
-    <view class='person-content-out' ></view>
+    <view class='person-content-out'>
+        <view class='music-one-item'>
+            <view class='music-item-title'>巅峰榜·流行指数</view>
+            <view class='music-item-content'>
+                <view class='xiao-music-ele'>
+                    <view>
+                        <view class='xiao-music-name'>G.E.M. 邓紫棋</view>
+                        <view class='xiao-music-maker' ></view>
+                    </view>
+                    <view class='xiao-music-img'>
+                        <image src='http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_1544667619_4_300_224111860.jpg' />
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
 </view>
