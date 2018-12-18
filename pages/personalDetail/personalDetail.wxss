@@ -1,4 +1,4 @@
-.person-detail-nav{
+.person-detail-nav {
     height: 80rpx;
     display: flex;
     border-bottom: 1rpx solid #ccc;
@@ -9,7 +9,7 @@
     width: 100%;
 }
 
-.per-nav-one{
+.per-nav-one {
     width: 33.33%;
     display: flex;
     align-items: center;
@@ -17,38 +17,61 @@
     color: #666;
 }
 
-.nav-active{
+.nav-active {
     color: #01c0d2;
 }
 
-.per-nav-one i{
+.per-nav-one i {
     font-size: 40rpx;
 }
 
-.per-nav-one text{
+.per-nav-one text {
     font-size: 32rpx;
     margin: 0 0 0 10rpx;
 }
 
-.person-content-out{
+.person-content-out {
     padding: 81rpx 0 0 0;
 }
 
-.music-item-title{
+.music-item-title {
     font-size: 32rpx;
     padding: 20rpx;
-    border-bottom: 1rpx solid #ddd;    
+    border-bottom: 1rpx solid #ddd;
     color: #01c0d2;
 }
 
-.xiao-music-ele{
+.xiao-music-ele {
     display: flex;
     justify-content: space-between;
     padding: 20rpx;
     border-bottom: 1rpx solid #ddd;
 }
 
-.xiao-music-img image{
-    width: 150rpx;
-    height: 150rpx;
+.xiao-music-img image {
+    width: 130rpx;
+    height: 130rpx;
+}
+
+.xiao-music-maker {
+    display: flex;
+    align-items: center;
+    margin: 10rpx 0 0 0;
+}
+
+.xiao-view-loading {
+    height: 5rpx;
+    width: 250rpx;
+    background-color: rgba(221, 221, 221, 1);
+    margin: 0 15rpx;
+}
+
+.xiao-view-icon .iconfont{
+    color: rgba(221, 221, 221, 1);
+    font-size: 50rpx;
+}
+
+.xiao-music-time{
+    font-size: 26rpx;
+    color: #999;
 }
