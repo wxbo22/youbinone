@@ -70,8 +70,35 @@ const wxRequire = function(url, method, data, success, error) {
     })
 }
 
+// 获取歌曲列表
+const getTopList = () => {
+    const url = 'https://c.y.qq.com/v8/fcg-bin/fcg_myqq_toplist.fcg?g_tk=1928093487&inCharset=utf-8&outCharset=utf-8&notice=0&format=jsonp&uin=0&needNewCode=1&platform=h5&jsonpCallback=jp1'
+    return new Promise((resolve, reject) => {
+        wx.request({
+            url: url,
+            success: function(res) {
+                resolve(res)
+            },
+            fail: function(err) {
+                wx.getSystemInfo({
+                    success(res) {
+                        const msg = (err && err.Message) || "操作失败！";
+                        sysInfo = '操作系统版本：' + res.system + '，微信版本：' + res.version + '，小程序基础库版本：' + res.SDKVersion;
+                        wx.showModal({
+                            title: '提示',
+                            content: sysInfo + msg,
+                            showCancel: false
+                        })
+                    }
+                })
+                reject(err)
+            }
+        })
+    })
+}
 
 module.exports = {
     formatTime: formatTime,
-    wxRequire: wxRequire
+    wxRequire: wxRequire,
+    getTopList: getTopList
 }

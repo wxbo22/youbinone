@@ -14,4 +14,6 @@
             <text>全屏</text>
         </view>
     </view>
+    <!-- 音乐列表 -->
+    <view class='person-content-out' ></view>
 </view>
