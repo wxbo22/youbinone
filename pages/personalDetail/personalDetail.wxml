@@ -29,6 +29,7 @@
                             </view>
                             <view class='xiao-view-loading'></view>
                             <view class='xiao-music-time'>{{smallItem.musicTime}}</view>
+                            <view class='xiao-music-gif' ><image src='/img/music.gif' /></view>                            
                         </view>
                     </view>
                     <view class='xiao-music-img'>
