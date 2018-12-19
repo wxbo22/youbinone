@@ -8,6 +8,8 @@ Page({
     data: {
         // 音乐列表
         musicList: [],
+        // 当前播放音乐
+        currentSong: {}
     },
 
     /**
@@ -92,11 +94,16 @@ Page({
 
     },
     // 播放按钮事件
-    playIconEvent: function(e) {
+    playIconEvent: function(e) {       
         const id = e.currentTarget.dataset.id || '';
-        const idx = e.currentTarget.dataset.idx || '';
-        const songInfoList = this.data.musicList && this.data.musicList.songInfoList || [];
-        let mid = songInfoList[idx] && songInfoList[idx].mid || '';
+        const aidx = e.currentTarget.dataset.aidx;
+        const bidx = e.currentTarget.dataset.bidx;
+        const songInfoList = this.data.musicList && this.data.musicList[aidx] && this.data.musicList[aidx].songInfoList || [];
+        let currentSong = songInfoList[bidx] || {};
+        let mid = currentSong.mid || '';        
+        this.setData({
+            currentSong
+        })
         if(!mid) return;
         this.getPlayUrl(mid);
     },
@@ -155,10 +162,12 @@ Page({
 
     // 创建播放器
     createAudio: function (playUrl) {
+        const currentSong = this.data.currentSong || {};
+        if (!playUrl || !currentSong.name) return;
         wx.playBackgroundAudio({
             dataUrl: playUrl,
-            title: this.data.currentSong.name,
-            coverImgUrl: this.data.currentSong.image
+            title: currentSong.name,
+            coverImgUrl: currentSong.image
         })
     },
 })
