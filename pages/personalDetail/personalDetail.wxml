@@ -28,7 +28,7 @@
                                 <i class='iconfont icon-pause-circle-fill' wx:if="{{currentSong.mid == smallItem.mid && playStatus == 1}}" />
                                 <i class='iconfont icon-play-circle-fill' wx:else />
                             </view>
-                            <view class='xiao-view-loading'></view>
+                            <view class='xiao-view-loading {{currentSong.mid === smallItem.mid?"xian-native":""}}'></view>
                             <view class='xiao-music-time'>{{smallItem.musicTime}}</view>
                             <view class='xiao-music-gif'>
                                 <image src='/img/music.gif' wx:if="{{currentSong.mid == smallItem.mid && playStatus == 1}}" />

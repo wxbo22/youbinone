@@ -80,6 +80,10 @@
     color: rgb(223, 10, 10)!important;
 }
 
+.xian-native{
+    background-color: rgb(223, 10, 10)!important;
+}
+
 .xiao-music-gif image{
     width: 30rpx;
     height: 30rpx;
