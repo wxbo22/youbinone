@@ -28,7 +28,7 @@
                                 <i class='iconfont icon-play-circle-fill' />
                             </view>
                             <view class='xiao-view-loading'></view>
-                            <view class='xiao-music-time'>3'45</view>
+                            <view class='xiao-music-time'>{{smallItem.musicTime}}</view>
                         </view>
                     </view>
                     <view class='xiao-music-img'>

@@ -112,14 +112,17 @@ const getTopMusicList = topid => {
 
 // 生成音乐对象
 function Song({ id, mid, singer, name, album, duration, image, musicId }) {
-    this.id = id
-    this.mid = mid
-    this.singer = singer
-    this.name = name
-    this.album = album
-    this.duration = duration
-    this.image = image
-    this.musicId = musicId
+    this.id = id;
+    this.mid = mid;
+    this.singer = singer;
+    this.name = name;
+    this.album = album;
+    this.duration = duration;
+    this.image = image;
+    this.musicId = musicId;
+    let midTime = Number(duration);
+    let musicTime = `${parseInt(midTime / 60)}'${midTime % 60}`;
+    this.musicTime = musicTime;
 }
 
 function filterSinger(singer) {
