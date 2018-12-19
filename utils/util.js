@@ -97,8 +97,60 @@ const getTopList = () => {
     })
 }
 
+// 获取歌曲音乐
+const getTopMusicList = topid => {
+    const url = `https://c.y.qq.com/v8/fcg-bin/fcg_v8_toplist_cp.fcg?g_tk=1928093487&inCharset=utf-8&outCharset=utf-8&notice=0&format=jsonp&topid=${topid}&needNewCode=1&uin=0&tpl=3&page=detail&type=top&platform=h5&jsonpCallback=jp1`
+    return new Promise((resolve, reject) => {
+        wx.request({
+            url: url,
+            success: function (res) {
+                resolve(res)
+            }
+        })
+    })
+}
+
+// 生成音乐对象
+function Song({ id, mid, singer, name, album, duration, image, musicId }) {
+    this.id = id
+    this.mid = mid
+    this.singer = singer
+    this.name = name
+    this.album = album
+    this.duration = duration
+    this.image = image
+    this.musicId = musicId
+}
+
+function filterSinger(singer) {
+    let ret = []
+    if (!singer) {
+        return ''
+    }
+    singer.forEach((s) => {
+        ret.push(s.name)
+    })
+    return ret.join('/')
+}
+
+const createSong = musicData => {
+    return new Song({
+        id: musicData.songid,
+        mid: musicData.songmid,
+        singer: filterSinger(musicData.singer),
+        name: musicData.songname,
+        album: musicData.albumname,
+        duration: musicData.interval,
+        image: `https://y.gtimg.cn/music/photo_new/T002R300x300M000${musicData.albummid}.jpg?max_age=2592000`,
+        musicId: musicData.songid
+    })
+}
+
+
 module.exports = {
     formatTime: formatTime,
     wxRequire: wxRequire,
-    getTopList: getTopList
+    getTopList: getTopList,
+    getTopMusicList: getTopMusicList,
+    createSong: createSong
 }

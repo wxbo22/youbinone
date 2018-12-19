@@ -24,7 +24,7 @@
                     <view class='xiao-music-left'>
                         <view class='xiao-music-name'>{{smallItem.songname}}</view>
                         <view class='xiao-music-maker'>
-                            <view class='xiao-view-icon'>
+                            <view class='xiao-view-icon' bindtap='playIconEvent' data-id='{{item.id}}' data-idx='{{idx}}' >
                                 <i class='iconfont icon-play-circle-fill' />
                             </view>
                             <view class='xiao-view-loading'></view>
