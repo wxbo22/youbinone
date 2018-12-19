@@ -20,9 +20,9 @@
         <view class='music-one-item' wx:for="{{musicList}}" wx:for-index="idx" wx:for-item="item"  wx:key='id' >
             <view class='music-item-title'>{{item.topTitle}}</view>
             <view class='music-item-content'>
-                <view class='xiao-music-ele' wx:for="{{item.songList}}" wx:for-item="smallItem"  wx:key='smallItem' >
+                <view class='xiao-music-ele' wx:for="{{item.songInfoList}}" wx:for-item="smallItem"  wx:key='smallItem' >
                     <view class='xiao-music-left'>
-                        <view class='xiao-music-name'>{{smallItem.songname}}</view>
+                        <view class='xiao-music-name'>{{smallItem.name}}</view>
                         <view class='xiao-music-maker'>
                             <view class='xiao-view-icon' bindtap='playIconEvent' data-id='{{item.id}}' data-idx='{{idx}}' >
                                 <i class='iconfont icon-play-circle-fill' />
@@ -32,7 +32,7 @@
                         </view>
                     </view>
                     <view class='xiao-music-img'>
-                        <image src='{{item.picUrl}}' />
+                        <image src='{{smallItem.image}}' />
                     </view>
                 </view>
                 

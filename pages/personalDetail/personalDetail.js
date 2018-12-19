@@ -32,14 +32,15 @@ Page({
         util.getTopList().then(res => {
             const res1 = res.data.replace('jp1(', '')
             const res2 = JSON.parse(res1.substring(0, res1.length - 1));
-            const musicList = res2.data.topList || [];
+            let musicList = res2.data.topList || [];
             musicList.map(elem => {
                 const topId = elem.id || '';
                 if (!topId) return;
                 util.getTopMusicList(topId).then(res => {
                     const res1 = res.data.replace('jp1(', '');
                     const res2 = JSON.parse(res1.substring(0, res1.length - 1));
-                    const songDetailList = res2 && res2.songlist || [];
+                    let songDetailList = res2 && res2.songlist || [];
+                    songDetailList = songDetailList.slice(0,3);
                     const makeRes = [];
                     songDetailList.map(x => {
                         const musicData = x.data;
@@ -48,10 +49,10 @@ Page({
                         }
                     });
                     elem.songInfoList = makeRes;
+                    This.setData({
+                        musicList
+                    })
                 })
-            })
-            this.setData({
-                musicList
             })
         }).catch(err => {})
     },
@@ -94,6 +95,24 @@ Page({
     playIconEvent: function(e) {
         const id = e.currentTarget.dataset.id || '';
         const idx = e.currentTarget.dataset.idx || '';
+        const musicList = this.data.musicList;
+        debugger
+    },
+    // 获取背景播放音乐的songmidid
+    getBackPlayfileName: function () {
+        return new Promise((resolve, reject) => {
+            wx.getBackgroundAudioPlayerState({
+                success: function (res) {
+                    var dataUrl = res.dataUrl;
+                    let ret = dataUrl && dataUrl.split('?')[0].split('/')[3];
+                    resolve({ ret, res });
+                },
+                fail: function (e) {
+                    let ret = false;
+                    reject(ret);
+                }
+            })
+        })
     },
     // 获取播放地址
     getPlayUrl: function (songmidid) {
@@ -118,15 +137,15 @@ Page({
                 callback: 'callback',
             },
             success: function (res) {
-                var res1 = res.data.replace("callback(", "")
-                var res2 = JSON.parse(res1.substring(0, res1.length - 1))
-                const playUrl = `http://dl.stream.qqmusic.qq.com/${res2.data.items[0].filename}?vkey=${res2.data.items[0].vkey}&guid=3913883408&uin=0&fromtag=66`
-                This._getBackPlayfileName().then((nowPlay) => {
+                const res1 = res.data.replace("callback(", "");
+                const res2 = JSON.parse(res1.substring(0, res1.length - 1));
+                const playUrl = `http://dl.stream.qqmusic.qq.com/${res2.data.items[0].filename}?vkey=${res2.data.items[0].vkey}&guid=3913883408&uin=0&fromtag=66`;
+                This.getBackPlayfileName().then((nowPlay) => {
                     if (!(res2.data.items[0].filename === nowPlay.ret)) {
-                        This.createAudio(playUrl)
+                        This.createAudio(playUrl);
                     }
                 }).catch((err) => {
-                    This.createAudio(playUrl)
+                    This.createAudio(playUrl);
                 })
             }
         })
