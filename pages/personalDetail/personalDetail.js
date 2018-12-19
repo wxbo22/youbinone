@@ -95,8 +95,10 @@ Page({
     playIconEvent: function(e) {
         const id = e.currentTarget.dataset.id || '';
         const idx = e.currentTarget.dataset.idx || '';
-        const musicList = this.data.musicList;
-        debugger
+        const songInfoList = this.data.musicList && this.data.musicList.songInfoList || [];
+        let mid = songInfoList[idx] && songInfoList[idx].mid || '';
+        if(!mid) return;
+        this.getPlayUrl(mid);
     },
     // 获取背景播放音乐的songmidid
     getBackPlayfileName: function () {
