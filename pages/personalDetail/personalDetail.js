@@ -1,4 +1,6 @@
 const util = require('../../utils/util.js');
+// 播放器对象
+let backgroundAudioManager = {};
 
 Page({
 
@@ -11,7 +13,7 @@ Page({
         // 当前播放音乐
         currentSong: {},
         // 0：未播放，1：播放中，2：停止中
-        playStatus: 0,
+        playStatus: 0
     },
 
     /**
@@ -33,6 +35,7 @@ Page({
      */
     onShow: function() {
         const This = this;
+        backgroundAudioManager = wx.getBackgroundAudioManager();
         util.getTopList().then(res => {
             const res1 = res.data.replace('jp1(', '')
             const res2 = JSON.parse(res1.substring(0, res1.length - 1));
@@ -102,13 +105,27 @@ Page({
         const bidx = e.currentTarget.dataset.bidx;
         const songInfoList = this.data.musicList && this.data.musicList[aidx] && this.data.musicList[aidx].songInfoList || [];
         let currentSong = songInfoList[bidx] || {};
+        let oldCurrSont = this.data.currentSong;
         let mid = currentSong.mid || '';
-        this.setData({
-            currentSong,
-            playStatus: 1
-        })
-        if (!mid) return;
-        this.getPlayUrl(mid);
+        const playStatus = this.data.playStatus;
+        if (oldCurrSont.mid === mid && playStatus == 1) {
+            this.setData({
+                playStatus: 0
+            });
+            backgroundAudioManager.pause();            
+        } else if (oldCurrSont.mid === mid && playStatus == 0) {
+            this.setData({
+                playStatus: 1
+            });
+            backgroundAudioManager.play();
+        } else {
+            this.setData({
+                currentSong,
+                playStatus: 1
+            })
+            if (!mid) return;
+            this.getPlayUrl(mid);
+        }
     },
     // 获取背景播放音乐的songmidid
     getBackPlayfileName: function() {
@@ -170,10 +187,8 @@ Page({
     createAudio: function(playUrl) {
         const currentSong = this.data.currentSong || {};
         if (!playUrl || !currentSong.name) return;
-        wx.playBackgroundAudio({
-            dataUrl: playUrl,
-            title: currentSong.name,
-            coverImgUrl: currentSong.image
-        })
+        backgroundAudioManager.title = currentSong.name;
+        backgroundAudioManager.coverImgUrl = currentSong.image;
+        backgroundAudioManager.src = playUrl;
     },
 })

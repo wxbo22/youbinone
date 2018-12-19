@@ -31,7 +31,7 @@
                             <view class='xiao-view-loading'></view>
                             <view class='xiao-music-time'>{{smallItem.musicTime}}</view>
                             <view class='xiao-music-gif'>
-                                <image src='/img/music.gif' />
+                                <image src='/img/music.gif' wx:if="{{currentSong.mid == smallItem.mid && playStatus == 1}}" />
                             </view>
                         </view>
                     </view>
