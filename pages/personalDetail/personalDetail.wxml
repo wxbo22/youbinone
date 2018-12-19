@@ -24,8 +24,9 @@
                     <view class='xiao-music-left'>
                         <view class='xiao-music-name'>{{smallItem.name}}</view>
                         <view class='xiao-music-maker'>
-                            <view class='xiao-view-icon' bindtap='playIconEvent' data-id='{{item.id}}' data-aidx='{{aidx}}' data-bidx='{{bidx}}'>
-                                <i class='iconfont icon-play-circle-fill {{currentSong.mid === smallItem.mid?"iconactive":""}}' />
+                            <view class='xiao-view-icon {{currentSong.mid === smallItem.mid?"iconactive":""}}' bindtap='playIconEvent' data-id='{{item.id}}' data-aidx='{{aidx}}' data-bidx='{{bidx}}'>
+                                <i class='iconfont icon-play-circle-fill' wx:if="{{currentSong.mid !== smallItem.mid}}" />
+                                <i class='iconfont icon-pause-circle-fill'wx:else />
                             </view>
                             <view class='xiao-view-loading'></view>
                             <view class='xiao-music-time'>{{smallItem.musicTime}}</view>
